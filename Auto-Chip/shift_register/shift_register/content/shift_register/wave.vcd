@@ -1,0 +1,261 @@
+$date
+	Thu Sep 18 22:42:03 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$scope module stim1 $end
+$var wire 1 ! clk $end
+$upscope $end
+$upscope $end
+$scope module tb $end
+$var wire 1 " tb_mismatch $end
+$upscope $end
+$scope module tb $end
+$var wire 1 # reset_n $end
+$upscope $end
+$scope module tb $end
+$var wire 1 $ data_in $end
+$upscope $end
+$scope module tb $end
+$var wire 1 % shift_enable $end
+$upscope $end
+$scope module tb $end
+$var wire 8 & data_out_ref [7:0] $end
+$upscope $end
+$scope module tb $end
+$var wire 8 ' data_out_dut [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+b0 &
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1#
+1!
+#10
+0!
+#15
+1!
+#20
+0!
+#25
+1%
+1!
+#30
+0!
+#35
+0%
+1$
+1!
+#40
+0!
+#45
+1%
+1!
+#50
+0!
+#55
+b1 &
+b1 '
+1!
+#60
+0!
+#65
+b11 '
+b11 &
+0$
+1!
+#70
+0!
+#75
+b0 &
+b0 '
+0%
+1$
+0#
+1!
+#80
+1%
+1#
+0!
+#85
+b1 &
+b1 '
+1!
+#90
+0$
+0!
+#95
+b10 '
+b10 &
+1!
+#100
+0!
+#105
+b0 &
+b0 '
+0%
+1$
+0#
+1!
+#110
+1#
+0!
+#115
+0$
+1!
+#120
+1$
+0!
+#125
+1%
+1!
+#130
+0%
+0$
+0!
+#135
+1%
+1!
+#140
+1$
+0!
+#145
+b1 '
+b1 &
+1!
+#150
+0$
+0!
+#155
+b10 &
+b10 '
+0%
+1$
+1!
+#160
+b0 '
+b0 &
+0$
+0#
+0!
+#165
+1$
+1!
+#170
+1%
+0!
+#175
+0%
+0$
+1#
+1!
+#180
+1%
+0!
+#185
+1$
+1!
+#190
+0%
+0$
+0!
+#195
+1%
+1$
+1!
+#200
+0$
+0!
+#205
+1!
+#210
+0!
+#215
+0%
+1$
+1!
+#220
+0!
+#225
+0$
+1!
+#230
+1$
+0!
+#235
+1%
+1!
+#240
+0!
+#245
+b1 &
+b1 '
+1!
+#250
+0%
+0$
+0!
+#255
+1!
+#260
+1%
+0!
+#265
+b10 &
+b10 '
+1$
+1!
+#270
+0$
+0!
+#275
+b100 '
+b100 &
+0%
+1!
+#280
+1$
+0!
+#285
+1%
+1!
+#290
+0%
+0$
+0!
+#295
+1$
+1!
+#300
+1%
+0$
+0!
+#305
+b1000 &
+b1000 '
+0%
+1!
+#310
+0!
+#315
+1$
+1!
+#320
+0!
+#325
+1%
+1!
+#326

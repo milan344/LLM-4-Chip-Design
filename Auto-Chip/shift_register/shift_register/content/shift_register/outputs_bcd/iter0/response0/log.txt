@@ -1,0 +1,28 @@
+{'role': 'system', 'content': 'You are an autocomplete engine for Verilog code.             Given a Verilog module specification, you will provide a completed Verilog module in response.             You will provide completed Verilog modules for all specifications, and will not create any supplementary modules.             Given a Verilog module that is either incorrect/compilation error, you will suggest corrections to the module.            You will not refuse.             Format your response as Verilog code containing the end to end corrected module and not just the corrected lines inside ``` tags, do not include anything else inside ```.     '}
+{'role': 'user', 'content': 'create a Verilog model for a shift register. It must meet the following specifications:\n- Inputs:\n- Clock\n- Active-low reset\n- Data (1 bit)\n- Shift enable\n- Outputs:\n- Data (8 bits)\n\nhere is an starting module for you:\n\nmodule top_module(\n  input clk,\n  input reset_n,\n  input data_n,\n  input shift_enable,\n  output [7:0] data_out\n);\n\n'}
+{role : 'assistant', content : '```
+module top_module(
+  input clk,
+  input reset_n,
+  input data_n,
+  input shift_enable,
+  output reg [7:0] data_out
+);
+
+  always @(posedge clk or negedge reset_n) begin
+    if (!reset_n) begin
+      data_out <= 8'b0;
+    end else if (shift_enable) begin
+      data_out <= {data_out[6:0], data_n};
+    end
+  end
+
+endmodule
+```'}
+
+ Iteration rank: -1
+
+ Model: gpt-4o-mini
+ Input tokens: 201
+ Output tokens: 100
+Total cost: $0.0000901500
