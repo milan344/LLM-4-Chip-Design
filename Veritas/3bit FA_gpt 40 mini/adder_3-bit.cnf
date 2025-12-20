@@ -1,0 +1,10 @@
+Here are the CNF equations for a 3-bit adder:
+
+```
+S0 = (A0 ∨ B0 ∨ !Cin) ∧ (!A0 ∨ !B0 ∨ Cin) ∧ (!A0 ∨ B0 ∨ Cin) ∧ (A0 ∨ !B0 ∨ Cin)
+S1 = (A1 ∨ B1 ∨ !Cout0) ∧ (!A1 ∨ !B1 ∨ Cout0) ∧ (!A1 ∨ B1 ∨ Cout0) ∧ (A1 ∨ !B1 ∨ Cout0)
+S2 = (A2 ∨ B2 ∨ !Cout1) ∧ (!A2 ∨ !B2 ∨ Cout1) ∧ (!A2 ∨ B2 ∨ Cout1) ∧ (A2 ∨ !B2 ∨ Cout1)
+Cout0 = (A0 ∨ B0 ∨ !Cin) ∧ (!A0 ∨ !B0 ∨ Cin) ∧ (!A0 ∨ B0 ∨ Cin) ∧ (A0 ∨ !B0 ∨ Cin)
+Cout1 = (A1 ∨ B1 ∨ !Cout0) ∧ (!A1 ∨ !B1 ∨ Cout0) ∧ (!A1 ∨ B1 ∨ Cout0) ∧ (A1 ∨ !B1 ∨ Cout0)
+Cout2 = (A2 ∨ B2 ∨ !Cout1) ∧ (!A2 ∨ !B2 ∨ Cout1) ∧ (!A2 ∨ B2 ∨ Cout1) ∧ (A2 ∨ !B2 ∨ Cout1)
+```
